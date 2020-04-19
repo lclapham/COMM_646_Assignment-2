@@ -36,3 +36,8 @@ $(function () {
     });
 
 });
+
+// Product tabs HomePage
+$(function () {
+    $("#tabs").tabs();
+});
