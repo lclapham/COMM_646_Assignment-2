@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/jquery.scrolltop.min.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,6 +24,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
+	<script src="js/jquery.scrolltop.min.js"></script>
+
 	<script>
 		$(function () {
 			$("#menu").menu();
@@ -31,6 +35,15 @@
 		.ui-menu {
 			width: 150px;
 		}
+
+		.scrolltop.active {
+			padding-top: 30px;
+			
+		}
+
+		.scrolltop {
+			right: 30%;
+		}
 	</style>
 
 
@@ -39,6 +52,19 @@
 			$('#responsive-menu').mobileMenu();
 		});
 	</script> -->
+<script>
+	$.scrolltop();
+
+</script>
+
+	<script src="jquery.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script>
+		$(document).ready(function () {
+			$( "#sticker" ).sticky({ topSpacing: 0 });
+			$.scrolltop();
+		});
+	</script>
 </head>
 
 <body>
@@ -77,7 +103,7 @@
 					for cohesiveness of any future developments. Define and/or re-defining your service and/or product
 					offerings. Define expansion plans and strategies. Implement Search Engine Optimization of all Online
 					materials.</p>
-				<a href="#topPage">Back to top</a>
+			
 			</div>
 			<div id="vCon">
 				<img src="images/logo_vconvert.gif" alt="">
@@ -102,7 +128,7 @@
 					Allowing the user to focus on the subject at hand rather than searching for information on the site.
 				</P>
 
-				<a href="#topPage">Back to top</a>
+				
 
 			</div>
 			<div id="vRet">
@@ -121,8 +147,7 @@
 					to
 					improve usability and user experience.</p>
 
-				<a href="#topPage">Back to top</a>
-
+				
 			</div>
 
 			<p>&nbsp;</p>
@@ -130,12 +155,12 @@
 
 		<section id="testimonials" class="five columns">
 			<h4>Quick Nav</h4>
-
+			<div id="sticker">
 			<ul id="menu" stye="padding: 20px; ">
 
 				<li style="margin: 20px 0 20px 0;">
 					<a style="text-decoration: none; font-size: 1.1em;" href="#vPros">vProspect 2.0</a>
-					
+
 				</li>
 				<li style="margin: 20px 0 20px 0;">
 					<a style="text-decoration: none; font-size: 1.1em" href="#vCon">vConvert 2.0</a>
@@ -143,6 +168,7 @@
 				<li style="margin: 20px 0 20px 0;">
 					<a style="text-decoration: none; font-size: 1.1em" href="#vRet">vRetain 2.0</a>
 			</ul>
+		</div>
 		</section>
 	</main>
 	<script src="js/site.js"></script>
