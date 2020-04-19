@@ -1,10 +1,10 @@
-$(document).ready(function () {
-    $('#responsive-menu').mobileMenu();
+// $(document).ready(function () {
+//     $('#responsive-menu').mobileMenu();
 
-});
+// });
 
 // Nav Bar ToolTips
-$(function () {
+$( document ).ready(function () {
     $("#tool1").tooltip({
         content: "Vecta Corporation provides scalable business solutions to help companies achieve success",
         track: true
