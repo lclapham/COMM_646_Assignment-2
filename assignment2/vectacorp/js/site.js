@@ -41,3 +41,8 @@ $(function () {
 $(function () {
     $("#tabs").tabs();
 });
+
+// Testimonials Accordion
+$(function () {
+    $("#accordion").accordion();
+});
