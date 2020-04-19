@@ -25,6 +25,10 @@
 	<script>
 		$(function () {
 			$(".guiJQ").checkboxradio();
+			$("#companysize").selectmenu();
+			$("#hearaboutus").selectmenu();
+			$(".widget input[type=submit], .widget a, .widget button").button();
+			
 		});
 	</script>
 </head>
@@ -89,19 +93,22 @@
 						<label for="radio-4">Unix</label>
 						<input class="guiJQ" type="radio" name="radio-1" id="radio-4">
 					</div>
+
 					<div style="margin-top: 20px;">
 						How many employees do you have?<br>
-						<select name="companysize">
+						<select name="companysize" id="companysize">
 							<option value="1-10">1-10</option>
 							<option value="11-100">11-100</option>
 							<option value="101-1000">101-1000</option>
 							<option value="More than 1000">More than 1000</option>
 						</select>
+
+
 					</div>
 
 					<div>
 						How did you hear about us?<br>
-						<select name="hearaboutus" multiple="" size="5">
+						<select name="hearaboutus" id="hearaboutus" multiple="" size="5">
 							<option value="Magazine Ad">Magazine Ad</option>
 							<option value="Radio Ad">Radio Ad</option>
 							<option value="TV Ad">TV Ad</option>
@@ -111,11 +118,11 @@
 
 					</div>
 
-
+					<div class="widget">
 					Questions or comments for our sales representatives?
 					<textarea name="questions" size="30" rows="5"></textarea>
-					<input type="submit" name="submit" value="Submit Now">
-
+					<input class="ui-button ui-widget ui-corner-all" type="submit" name="submit" value="Submit Now">
+				</div>
 			</form>
 		</section>
 
